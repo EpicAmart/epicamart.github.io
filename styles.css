@@ -20,13 +20,12 @@ nav {
 
 .nav-items {
     border-bottom: 0.1rem blue solid;
-    padding: 1rem 0;
+    padding: 0.8rem 0;
 }
 
 
 nav a {
     text-decoration: none;
-    color:black;
     padding: 1rem 1.5rem;
 }
 
@@ -95,9 +94,11 @@ button:hover {
 
 .hero-image {
     max-height: 100%;
-    max-width: 100%;;
+    max-width: 100%;
     width: auto;
     height: auto;
+    border-radius: 20%;
+    object-fit: cover;
 }
 
 .contact {
@@ -124,7 +125,15 @@ button:hover {
         grid-template-columns: 1fr;
     }
 
+    .column-right {
+        grid-row: 1;
+    }
+
+
     .hero-image {
-        display: none;
+        max-height: 300px;
+        max-width: 300px;
+        width: auto;
+        height: auto;
     }
 }
