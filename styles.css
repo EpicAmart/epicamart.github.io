@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+nav {
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    margin: 3vh 0;
+}
+
+.nav-items {
+    border-bottom: 0.1rem blue solid;
+    padding: 1rem 0;
+}
+
+
+nav a {
+    text-decoration: none;
+    color:black;
+    padding: 1rem 1.5rem;
+}
+
+nav a:hover {
+    background-color: blue;
+}
+
+.hero {
+    color:black;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 85vh;
+    padding: 2rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.emphasis {
+    color: blue;
+}
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    background:white;
+    color:blue;
+    border:0.1rem blue solid;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button:hover {
+    background:blue;
+    color:white;
+    border:0.1rem white solid;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.hero-image {
+    max-height: 100%;
+    max-width: 100%;;
+    width: auto;
+    height: auto;
+}
+
+.contact {
+    background-color: blue;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 calc((100vw - 1300px) / 2);
+}
+
+.contact a {
+    padding:0 1rem;
+}
+
+.copyright {
+    color: white;
+    font-size: 1rem;
+    padding: 0 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        display: none;
+    }
+}
