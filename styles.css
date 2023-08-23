@@ -48,22 +48,71 @@ nav a:hover {
     padding: 2rem calc((100vw - 1300px) / 2);
 }
 
+.fun-container {
+    height: 78vh;
+    padding: 2rem calc((100vw - 1300px) / 2);
+    overflow: scroll;
+}
+
+.blog-list {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    border-bottom: 0.1rem blue solid;
+    height: auto;
+    align-items: center;
+}
+
+.blog-listing {
+    max-height: 80%;
+    padding: 2%;
+    align-self: flex-start;
+}
+
+.blog-listing h2 {
+    margin-bottom: 0.5rem;
+}
+
+.blog-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    height: 90%;
+}
+
+.blog-thumbnail img {
+    height: 100%;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 78vh;
+    padding: 2rem calc((100vw - 1300px) / 2);
+    overflow: scroll;
+}
+
 .resume-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    height: 85vh;
+    height: 78vh;
     padding: 2rem calc((100vw - 1300px) / 2);
 }
 
 .resume-column-left {
-    background-color: blue;
-    color: white;
+    color: blue;
     padding: 5%;
+}
+
+.resume-column-left ul {
+    list-style-type: "\0023";
 }
 
 .resume-column-right {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+    overflow: scroll;
 }
 
 .resume-title {
@@ -76,6 +125,8 @@ nav a:hover {
 .resume-title img {
     height: 90%;
     margin: 0 10px;
+    border:0.1rem blue solid;
+    border-radius: 10%;
 }
 
 .resume-title h2 {
@@ -139,12 +190,28 @@ button:hover {
     padding: 0rem 2rem;
 }
 
+.project-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-image {
     max-height: 100%;
     max-width: 100%;
     width: auto;
     height: auto;
     border-radius: 20%;
+    object-fit: cover;
+    border: 0.2rem blue solid;
+}
+
+.project-image {
+    max-height: 90%;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    border-radius: 10%;
     object-fit: cover;
     border: 0.2rem blue solid;
 }
@@ -200,7 +267,7 @@ button:hover {
 }
 
 .bio-container {
-    height:50vh;
+    height:43vh;
     padding: 0 10%;
 }
 
