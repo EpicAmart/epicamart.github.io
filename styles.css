@@ -93,9 +93,24 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 79vh;
-    padding: 2rem calc((100vw - 1300px) / 2);
-    overflow: scroll;
+    width: 75%;
+    margin-left: 12.5%;
+    align-items: center;
 }
+
+.project-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image {
+    border-radius: 10%;
+    object-fit: cover;
+    border: 0.2rem blue solid;
+    width: 80%;
+}
+
 
 .resume-container {
     display: grid;
@@ -194,11 +209,6 @@ button:hover {
     padding: 0rem 2rem;
 }
 
-.project-cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .hero-image {
     max-height: 90%;
@@ -206,16 +216,6 @@ button:hover {
     width: auto;
     height: auto;
     border-radius: 20%;
-    object-fit: cover;
-    border: 0.2rem blue solid;
-}
-
-.project-image {
-    max-height: 90%;
-    max-width: 90%;
-    width: auto;
-    height: auto;
-    border-radius: 10%;
     object-fit: cover;
     border: 0.2rem blue solid;
 }
@@ -267,7 +267,7 @@ button:hover {
 }
 
 .banner {
-    height: 100%;
+    height: 80%;
     width: auto;
 }
 
