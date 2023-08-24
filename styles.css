@@ -266,13 +266,18 @@ button:hover {
     align-items: center;
 }
 
+.banner {
+    height: 100%;
+    width: auto;
+}
+
 .gap {
     height: 2vh;
 }
 
 .bio-container {
     height:44vh;
-    padding: 0 10%;
+    padding: 0 20%;
 }
 
 .gallery img {
