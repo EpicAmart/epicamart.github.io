@@ -243,6 +243,35 @@ body.dark-mode {
   transition: color var(--transition-speed);
 }
 
+/* Nautical link styles for Bio and Projects */
+
+.bio-text a,
+.project-links a {
+  color: var(--aqua); /* default link color (distinct from paragraph text) */
+  text-decoration: none; /* remove underline as requested */
+  transition: color var(--transition-speed), transform 0.12s ease;
+}
+
+.bio-text a:hover,
+.project-links a:hover {
+  color: var(--highlight); /* hover color switched to highlight */
+  transform: translateY(-1px);
+}
+
+.bio-text a:focus-visible,
+.project-links a:focus-visible {
+  outline: 3px solid rgba(0,169,192,0.18); /* accessible focus ring using aqua */
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Ensure external links that open in new tabs look consistent but keep their target behavior */
+.project-links a[target="_blank"]::after {
+  content: "\00a0\2197"; /* small NE arrow to indicate external link */
+  font-size: 0.85em;
+  color: var(--dark-navy);
+}
+
 /* Footer */
 footer {
   text-align: center;
