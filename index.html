@@ -1,52 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
-    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ffbe62af3f.js" crossorigin="anonymous"></script>
-    <title>Home | Amartya Ranganathan</title>
-    <link rel="icon" href="assets/wave_icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amartya Ranganathan</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 <body>
-    <nav>
-        <div class = "nav-items">
-            <a href="index.html"><i class="em em-wave" aria-role="presentation" aria-label="WAVING HAND SIGN"></i></a>
-            <a href="work.html"><i class="em em-building_construction" aria-role="presentation" aria-label=""></i></a>
-            <a href="create.html"><i class="em em-lower_left_paintbrush" aria-role="presentation" aria-label=""></i></a>
-            <a href="fun.html"><i class="em em-bulb" aria-role="presentation" aria-label=""></i></a>
-            <a href="about.html"><i class="em em-book" aria-role="presentation" aria-label="OPEN BOOK"></i></a>
-        </div>
-    </nav>
-    <div class = "hero">
-        <div class = "hero-container">
-            <div class = "column-left">
-                <h1><i class="em em-wave" aria-role="presentation" aria-label="WAVING HAND SIGN"></i></h1>
-                <h1><span class = "emphasis">Hello!</span> I'm Amartya</h1>
-                <p>I make things that implement my knowledge, express my perspective, and hopefully make a difference</p>
-                <a href="work.html"><button>Explore my work!</button></a>
-            </div>
-            <div class = "column-right">
-                <img src="assets/portfolio_cover.jpg" alt="" class = "hero-image">
-            </div>
-        </div>
+  <div class="container">
+    <!-- Bio Section -->
+    <section class="bio">
+      <div class="bio-text">
+        <h1>Amartya Ranganathan</h1>
+        <p>I'm currently a software engineer on the Public Key Infrastructure Team at GEICO Insurance.</p>
+        <p>Previously, I was an Academic Engineer at LearnWith.AI building revolutionary educational technologies and curriculum with the power of generative AI. Before that, I worked on the application registry team at Amazon Web Services building cloud computing technologies used worldwide and as an economic consulting summer analyst at Cornerstone Research using economic and statistical analyses for complex commercial litigation and regulatory proceedings. With my background in cloud computing, infrastructure engineering, and applied mathematics, I aspire to be part of teams that build the bedrock that scales game-changing ML models efficiently, securely, sustainably, and affordably.</p>
+        <p>I hold a Bachelor of Arts in Economics and Bachelor of Science in Applied Mathematics from the University of Southern California. Fight on!</p>
+      </div>
+      <div class="bio-right">
+        <img id="profilePhoto" src="assets/photos/portfolio.jpg" alt="Profile Photo">
+        <!-- Dark Mode Toggle Slider -->
+        <label class="dark-toggle-slider">
+          <input type="checkbox" id="darkToggle">
+          <span class="slider-circle"></span>
+          <span class="icon sun"><i class="fas fa-sun"></i></span>
+          <span class="icon moon"><i class="far fa-moon"></i></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Contact Bar -->
+    <div class="contact-bar">
+      <a href="mailto:amartyarr@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/amartyaranganathan">LinkedIn</a>
+      <a href="https://github.com/EpicAmart/">GitHub</a>
+      <a href="https://x.com/amartyarr">Twitter</a>
+      <a href="assets/files/resume.pdf">Resume</a>
     </div>
-    <div class = "contact">
-        <div class = "copyright">
-            © 2023 Amartya Ranganathan
+
+    <!-- Projects Section -->
+    <section class="projects">
+      <div class="project-item">
+        <img src="assets/photos/readact.jpg" alt="Project 1" class="project-image">
+        <div class="project-text">
+          <h2>ReadAct</h2>
+          <p>ReadAct is a Chrome extension that calculates political bias in news articles, identifies political candidates currently running for office, and provides descriptions of initiatives/measures. The main pop-up displays the bias on a colored scale. Additionally, significant terms are parsed from the article with their definitions and further resources available below the scale. Beyond the pop-up, ReadAct highlights the significant terms and provides popovers that appear when hovering over the term.</p>
+          <div class="project-meta">
+            <div class="project-tech">
+              <strong>Technologies Used:</strong>
+              HTML, CSS, JavaScript, Bootstrap, jQuery, Azure Cognitive Services
+            </div>
+            <div class="project-awards">
+              <strong>Recognition:</strong>
+              5.0/5.0 User Rating on Chrome Web Store
+            </div>
+            <div class="project-links">
+              <strong>Links:</strong>
+              <a href="https://github.com/project1" target="_blank">GitHub</a> |
+              <a href="https://devpost.com/project1" target="_blank">Devpost</a> |
+              <a href="https://youtu.be/demo1" target="_blank">Video Demo</a> |
+              <a href="https://chromewebstore.google.com/detail/readaction/bekbeejdmnlcpaaodolnbijdfiionfnc?pli=1" target="_blank">Product Page</a>
+            </div>
+          </div>
         </div>
-        <div class = "contact-items">
-                <a href="https://www.linkedin.com/in/amartyaranganathan/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
-                <a href="https://github.com/EpicAmart"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
-                <a href="mailto:amartyarr@gmail.com"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
-                <a href="https://www.instagram.com/amartyarr/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100008997612392"><i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
-                <a href="https://devpost.com/amartyrr"><i class="fa-brands fa-dev" style="color: #ffffff;"></i></a>
-                <a href="https://drive.google.com/file/d/1x-1_ekSxZtA0uwXaUch7YZtPVYizZo0T/view?usp=sharing"><i class="fa-solid fa-file" style="color: #ffffff;"></i></a>
+      </div>
+      <div class="project-item">
+        <img src="assets/photos/vibecheck.jpg" alt="Project 2" class="project-image">
+        <div class="project-text">
+          <h2>Vibecheck</h2>
+          <p>Vibecheck is an application that converts voice call input into a curated music playlist. Based on the conversation, the application generates text and determines the emotion it holds. vibecheck correlates these sentiments to music by relating emotions like happiness, sadness, or “chill” to music features like beat and danceability.</p>
+          <div class="project-meta">
+            <div class="project-tech">
+              <strong>Technologies Used:</strong>
+              Python, Node.js, Google Cloud Natural Language API, Vonage API, Spotify API
+            </div>
+            <div class="project-awards">
+              <strong>Recognition:</strong>
+              Vonage API Honorable Mention (Top 7/50 Teams) - Hack the North 2021
+            </div>
+            <div class="project-links">
+              <strong>Links:</strong>
+              <a href="https://github.com/project2" target="_blank">GitHub</a> |
+              <a href="https://devpost.com/project2" target="_blank">Devpost</a> |
+              <a href="https://youtu.be/demo2" target="_blank">Video Demo</a>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="project-item">
+        <img src="assets/photos/allai.jpg" alt="Project 3" class="project-image">
+        <div class="project-text">
+          <h2>Allai</h2>
+          <p>Allai targets inclusive language through three main pillars: vocabulary, sentiment, and syntax. Users input their messaging and receive feedback on making the messaging empathetic and inclusive. This project was my first experience with the concepts of natural language processing.</p>
+          <div class="project-meta">
+            <div class="project-tech">
+              <strong>Technologies Used:</strong>
+              HTML, CSS, JavaScript, Flask, Google Cloud Natural Language API
+            </div>
+            <div class="project-awards">
+              <strong>Recognition:</strong>
+              1st Place Identity Track - DubHacks Hack '20, 2nd Place Overall - HackSC DEI Hackathon
+            </div>
+            <div class="project-links">
+              <strong>Links:</strong>
+              <a href="https://github.com/project3" target="_blank">GitHub</a> |
+              <a href="https://devpost.com/project3" target="_blank">Devpost</a> |
+              <a href="https://youtu.be/demo3" target="_blank">Video Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2025 Amartya Ranganathan
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
