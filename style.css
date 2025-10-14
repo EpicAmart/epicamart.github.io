@@ -192,14 +192,16 @@ body.dark-mode {
 
 /* Projects Section */
 .projects {
-  display: flex;
-  flex-direction: column;
+  display: block; /* use block layout to guarantee vertical stacking */
   gap: 50px;
 }
 
 .project-item {
   display: flex;
   gap: 20px;
+  width: 100%; /* ensure each project takes full width */
+  max-width: 820px; /* cap to container inner width (900 - 2*40 padding) */
+  margin: 0 auto 50px auto; /* center and add bottom spacing */
   background-color: var(--white);
   padding: 20px;
   border-radius: 12px;
@@ -267,12 +269,19 @@ body.dark-mode {
   border-radius: 4px;
 }
 
-/* Ensure external links that open in new tabs look consistent but keep their target behavior */
-.project-links a[target="_blank"]::after {
-  content: "\00a0\2197"; /* small NE arrow to indicate external link */
-  font-size: 0.85em;
-  color: var(--dark-navy);
+/* Layout and styling for project link groups */
+.project-links {
+  display: flex;
+  gap: 12px; /* space between each link */
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+.project-links a {
+  font-weight: 700; /* bold links */
+}
+
+/* Removed external link arrow icons — prefer cleaner links */
 
 /* Footer */
 footer {
