@@ -229,6 +229,7 @@ body.dark-mode {
 
 .project-text h2 {
   margin-top: 0;
+  margin-bottom: 0; /* remove default bottom margin for h2 */
   font-size: 1.4em;
   color: var(--navy);
   transition: color var(--transition-speed);
@@ -236,6 +237,7 @@ body.dark-mode {
 
 .project-text p {
   margin-bottom: 0;
+  margin-top: 0; /* remove space between h2 and paragraph */
   font-size: 0.95em;
   color: #333;
   transition: color var(--transition-speed);
