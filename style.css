@@ -66,18 +66,21 @@ body.dark-mode {
   margin: 0 auto;
   padding: 50px 40px;
   transition: background-color var(--transition-speed), color var(--transition-speed);
+  position: relative; /* positioning context for the top-right toggle */
 }
 
 /* Bio Section */
 .bio {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* align row items so h1 and toggle line up vertically */
   gap: 40px;
   margin-bottom: 50px;
 }
 
 .bio-text {
   flex: 1;
+  position: relative;
+  padding-right: 0; /* toggle moved out of this container */
 }
 
 .bio-text h1 {
@@ -85,6 +88,8 @@ body.dark-mode {
   margin: 0 0 10px;
   color: var(--navy);
   transition: color var(--transition-speed);
+  display: inline-block; /* keep heading inline so toggle can align to the right */
+  margin-right: 8px; /* small spacing if toggle sits close */
 }
 
 .bio-text p {
@@ -109,6 +114,14 @@ body.dark-mode {
   border: 3px solid var(--aqua);
   object-fit: cover;
   transition: border-color var(--transition-speed);
+}
+
+/* place toggle at the top-right of the container (to the right of the header and above the bio/photo) */
+.container .dark-toggle-slider {
+  position: absolute;
+  right: 40px; /* align with container's horizontal padding */
+  top: 52px;   /* sits below the container top padding so it's visually to the right of the h1 and above photo */
+  z-index: 50;
 }
 
 /* Dark Mode Toggle Slider */
@@ -319,5 +332,18 @@ footer {
 
   .project-text {
     text-align: center;
+  }
+
+  /* Ensure toggle stacks under heading on small screens */
+  .container .dark-toggle-slider {
+    position: static;
+    transform: none;
+    margin: 12px auto 0 auto;
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+    display: inline-flex;
+    justify-content: center;
   }
 }
