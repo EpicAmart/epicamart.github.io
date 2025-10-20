@@ -83,13 +83,27 @@ body.dark-mode {
   padding-right: 0; /* toggle moved out of this container */
 }
 
+/* brand: logo + heading inline */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.site-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  display: block;
+}
+
+/* adjust heading now that it's inside .brand */
 .bio-text h1 {
   font-size: 2em;
-  margin: 0 0 10px;
+  margin: 0; /* keep heading vertically aligned with logo */
   color: var(--navy);
   transition: color var(--transition-speed);
-  display: inline-block; /* keep heading inline so toggle can align to the right */
-  margin-right: 8px; /* small spacing if toggle sits close */
+  display: inline-block;
 }
 
 .bio-text p {
@@ -312,6 +326,16 @@ footer {
     text-align: center;
   }
 
+  /* center the brand on small screens */
+  .brand {
+    justify-content: center;
+  }
+
+  .site-logo {
+    width: 36px;
+    height: 36px;
+  }
+
   .bio-right img {
     margin-bottom: 10px;
   }
@@ -339,10 +363,6 @@ footer {
     position: static;
     transform: none;
     margin: 12px auto 0 auto;
-    display: inline-flex;
-    justify-content: center;
-  }
-}
     display: inline-flex;
     justify-content: center;
   }
