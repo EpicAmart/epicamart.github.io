@@ -2,7 +2,6 @@
   .bio {
     flex-direction: column;
     align-items: center;
-    gap: 24px;
   }
   /* Left-align bio paragraphs while keeping the name centered */
   .bio-text {
@@ -15,11 +14,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   transform: none;
-  margin-top: 8px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  padding: 0;
+  }
+
+  .bio-text p:last-child {
+    margin-bottom: 0;
   }
 }
 /* Profile photo styling */
@@ -144,7 +148,7 @@ body.dark-mode {
 /* place toggle at the top-right of the container (to the right of the header and above the bio/photo) */
 .container .dark-toggle-slider {
   position: absolute;
-  right: 40px; /* align with container's horizontal padding */
+  right: 20px; /* align with container's horizontal padding */
   top: 52px;   /* sits below the container top padding so it's visually to the right of the h1 and above photo */
   z-index: 50;
 }
